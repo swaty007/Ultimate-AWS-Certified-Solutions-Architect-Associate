@@ -21,6 +21,10 @@ Docker / Multi-Container / Single-Container
 # S3 (Simple Storage Service)
 Versioning / Encryption / Replication
 CRR (Cross-Region Replication) / SRR (Same-Region Replication)
+S3 Batch Replication (replicate existing objects)
+https://aws.amazon.com/s3/storage-classes/
+S3 Event Notification]
+S3 Retention Mode / Compliance Mode / Governance Mode
 
 
 CloudFront (CDN) / S3 (Storage) / RDS (Database) / DynamoDB (NoSQL) / Lambda (Serverless) / API Gateway / CloudWatch / CloudFormation / Elastic Beanstalk / CodeDeploy / CodePipeline / CodeCommit / SNS / SQS / SES / Kinesis / Redshift / Glacier / Snowball / Workspaces / Direct
