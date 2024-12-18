@@ -25,7 +25,9 @@ S3 Batch Replication (replicate existing objects)
 https://aws.amazon.com/s3/storage-classes/
 S3 Event Notification]
 S3 Retention Mode / Compliance Mode / Governance Mode
-
+S3 Object Lambda (transform data as it is read from S3) / Redacting Lambda (remove sensitive data)
+CloudFront (CDN)
+Global Accelerator (Anycast IP) send traffic over the AWS global network to the closest edge location
 
 CloudFront (CDN) / S3 (Storage) / RDS (Database) / DynamoDB (NoSQL) / Lambda (Serverless) / API Gateway / CloudWatch / CloudFormation / Elastic Beanstalk / CodeDeploy / CodePipeline / CodeCommit / SNS / SQS / SES / Kinesis / Redshift / Glacier / Snowball / Workspaces / Direct
 # EC2
