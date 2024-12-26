@@ -28,7 +28,11 @@ S3 Retention Mode / Compliance Mode / Governance Mode
 S3 Object Lambda (transform data as it is read from S3) / Redacting Lambda (remove sensitive data)
 CloudFront (CDN)
 Global Accelerator (Anycast IP) send traffic over the AWS global network to the closest edge location
+Snowball (Data Transfer Appliance)
+FSx (Windows File Server, Lustre, ONTAP, OpenZFS, Amazon FSx for NetApp ONTAP)
+Storage Gateway (File Gateway, Volume Gateway, Tape Gateway)
+AWS DataSync (Data Transfer Service)
 
-CloudFront (CDN) / S3 (Storage) / RDS (Database) / DynamoDB (NoSQL) / Lambda (Serverless) / API Gateway / CloudWatch / CloudFormation / Elastic Beanstalk / CodeDeploy / CodePipeline / CodeCommit / SNS / SQS / SES / Kinesis / Redshift / Glacier / Snowball / Workspaces / Direct
+DynamoDB (NoSQL) / Lambda (Serverless) / API Gateway / CloudWatch / CloudFormation / Elastic Beanstalk / CodeDeploy / CodePipeline / CodeCommit / SNS / SQS / SES / Kinesis / Redshift / Glacier / Snowball / Workspaces / Direct
 # EC2
 ssh -i EC2DevSsh.pem ec2-user@54.175.14.82
