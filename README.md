@@ -32,7 +32,28 @@ Snowball (Data Transfer Appliance)
 FSx (Windows File Server, Lustre, ONTAP, OpenZFS, Amazon FSx for NetApp ONTAP)
 Storage Gateway (File Gateway, Volume Gateway, Tape Gateway)
 AWS DataSync (Data Transfer Service)
+SQS (Simple Queue Service) (FIFO, Standard)
+SNS (Simple Notification Service) publish/subscribe
 
-DynamoDB (NoSQL) / Lambda (Serverless) / API Gateway / CloudWatch / CloudFormation / Elastic Beanstalk / CodeDeploy / CodePipeline / CodeCommit / SNS / SQS / SES / Kinesis / Redshift / Glacier / Snowball / Workspaces / Direct
+Kinesis (Data Streaming)
+• Let's assume 100 trucks, 5 kinesis shards, I SQS FIFO
+Kinesis Data Streams:
+• On average you'll have 20 trucks per shard
+• Trucks will have their data ordered within each shard
+• The maximum amount of consumers in parallel we can have is 5
+• Can receive up to 5 MB/s of data
+SOS FIFO
+• You only have one SQS FIFO queue
+• You will have 100 Group ID
+• You can have up to 100 Consumers (due to the 100 Group ID)
+• You have up to 300 messages per second (or 3000 if using batching)
+
+ECS (Elastic Container Service) / ECR (Elastic Container Registry)
+EKS (Elastic Kubernetes Service)
+AWS App Runner (Fully Managed Container Service)
+CloudFormation (Infrastructure as Code)
+Lambda (Serverless)
+
+DynamoDB (NoSQL) / API Gateway / CloudWatch / Elastic Beanstalk / CodeDeploy / CodePipeline / CodeCommit / SES / Kinesis / Redshift / Glacier / Snowball / Workspaces / Direct
 # EC2
 ssh -i EC2DevSsh.pem ec2-user@54.175.14.82
