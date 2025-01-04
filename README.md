@@ -8,7 +8,7 @@ Server Name Indication (SNI) // multiple SSL certificates on a single IP address
 ASG (Auto Scaling Group)
 CloudWatch (Monitoring)
 # RDS (Relational Database Service)
-Aurora (MySQL, PostgreSQL) / MariaDB / Oracle / SQL Server
+Aurora (MySQL, PostgreSQL) / MariaDB / Oracle / SQL Serverя
 # ElastiCache (Redis, Memcached)
 Write Through
 Lazy Loading
@@ -50,10 +50,35 @@ SOS FIFO
 
 ECS (Elastic Container Service) / ECR (Elastic Container Registry)
 EKS (Elastic Kubernetes Service)
+Fargate (Serverless)
 AWS App Runner (Fully Managed Container Service)
 CloudFormation (Infrastructure as Code)
 Lambda (Serverless)
+connect to VPC by using VPC configuration
+Invoke Lambda & Event Notification
+RDS for PostgreSQL / Aurora Mysql (events to call lambda) - need access for call Lambda function 
+Serverless Application Model (SAM)
+* AWS CLI
+* AWS SDK
+* AWS Lambda / Lambda Snap Start (Java 11+) / Provisioned Concurrency / Lambda Extensions / default outside VPC
+Lambda@Edge is a feature of CloudFront that lets you run code closer to your users, which improves performance and reduces latency.
+* DynamoDB
+* AWS Cognito
+* AWS S3
+* AWS SNS
+* AWS SQS
+* AWS SES
+* Kinesis Data Streams
+* AWS API Gateway
+* Aurora
+* Step Functions
+DynamoDB (NoSQL) / DAX (DynamoDB Accelerator)
+API Gateway
+Cognito (User Pools, Identity Pools)
+* Cognito User Pools (User Directory)
+* Cognito Identity Pools (Federated Identity)
 
-DynamoDB (NoSQL) / API Gateway / CloudWatch / Elastic Beanstalk / CodeDeploy / CodePipeline / CodeCommit / SES / Kinesis / Redshift / Glacier / Snowball / Workspaces / Direct
+
+CloudWatch / Elastic Beanstalk / CodeDeploy / CodePipeline / CodeCommit / SES / Redshift / Glacier / Workspaces / Direct
 # EC2
 ssh -i EC2DevSsh.pem ec2-user@54.175.14.82
