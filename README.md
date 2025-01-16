@@ -8,7 +8,16 @@ Server Name Indication (SNI) // multiple SSL certificates on a single IP address
 ASG (Auto Scaling Group)
 CloudWatch (Monitoring)
 # RDS (Relational Database Service)
-Aurora (MySQL, PostgreSQL) / MariaDB / Oracle / SQL Serverя
+Aurora (MySQL, PostgreSQL)
+MariaDB
+Oracle
+SQL Serverя
+DB2
+# NoSQL
+ElastiCache (Redis, Memcached)
+Keyspaces (Cassandra)
+DynamoDB (NoSQL)
+Graph (Neptune)
 # ElastiCache (Redis, Memcached)
 Write Through
 Lazy Loading
@@ -78,6 +87,7 @@ Cognito (User Pools, Identity Pools)
 * Cognito User Pools (User Directory)
 * Cognito Identity Pools (Federated Identity)
 
+# Data & Analytics
 
 CloudWatch / Elastic Beanstalk / CodeDeploy / CodePipeline / CodeCommit / SES / Redshift / Glacier / Workspaces / Direct
 # EC2
