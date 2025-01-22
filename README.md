@@ -98,6 +98,19 @@ Cognito (User Pools, Identity Pools)
 * MSK (Managed Streaming for Kafka)
 
 # Machine Learning
+* Rekognition (Image & Video) - Detect Labels, Faces, Text, Moderation, Celebrity, Pathing, Face Comparison
+* Transcribe (Speech to Text)
+* Polly (Text to Speech)
+* Translate (Language Translation)
+* Lex (Chatbot / Voice)
+* Connect (Contact Center)
+* Comprehend (Natural Language Processing) - Detect Sentiment, Entities, Key Phrases, Language, Structure data from text
+* SageMaker (ML) - Build, Train, Deploy ML models
+* Forecast (Time Series Forecasting)
+* Kendra (Enterprise Search / Document Search)
+* Personalize (Personalized Recommendations)
+* Textract (OCR - Optical Character Recognition) - KYC (Know Your Customer)
+* Fraud Detector
 
 CloudWatch / Elastic Beanstalk / CodeDeploy / CodePipeline / CodeCommit / Glacier / Workspaces / Direct
 # EC2
