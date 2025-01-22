@@ -88,7 +88,17 @@ Cognito (User Pools, Identity Pools)
 * Cognito Identity Pools (Federated Identity)
 
 # Data & Analytics
+* Redshift (Data Warehouse)
+* Athena (Query S3)
+* OpenSearch Service (Elasticsearch)
+* EMR (Elastic MapReduce)
+* QuickSight (Business Intelligence) - Dashboard
+* Glue (ETL - Extract, Transform, Load)
+* Data Lake (S3 + Glue + Athena) - top level security
+* MSK (Managed Streaming for Kafka)
 
-CloudWatch / Elastic Beanstalk / CodeDeploy / CodePipeline / CodeCommit / SES / Redshift / Glacier / Workspaces / Direct
+# Machine Learning
+
+CloudWatch / Elastic Beanstalk / CodeDeploy / CodePipeline / CodeCommit / Glacier / Workspaces / Direct
 # EC2
 ssh -i EC2DevSsh.pem ec2-user@54.175.14.82
