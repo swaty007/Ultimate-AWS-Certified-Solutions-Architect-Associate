@@ -112,6 +112,12 @@ Cognito (User Pools, Identity Pools)
 * Textract (OCR - Optical Character Recognition) - KYC (Know Your Customer)
 * Fraud Detector
 
-CloudWatch / Elastic Beanstalk / CodeDeploy / CodePipeline / CodeCommit / Glacier / Workspaces / Direct
+# Monitoring & Audit
+* CloudWatch (Monitor Resources)
+* CloudTrail (Audit API Calls)
+* Config (Resource Inventory) - Compliance
+* EventBridge (Event Bus, Cron Jobs)
+
+Elastic Beanstalk / CodeDeploy / CodePipeline / CodeCommit / Glacier / Workspaces / Direct
 # EC2
 ssh -i EC2DevSsh.pem ec2-user@54.175.14.82
