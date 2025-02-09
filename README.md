@@ -118,6 +118,16 @@ Cognito (User Pools, Identity Pools)
 * Config (Resource Inventory) - Compliance
 * EventBridge (Event Bus, Cron Jobs)
 
+# Security
+* AWS Secrets Manager
+* AWS Certificate Manager (ACM)
+* Web Application Firewall (WAF)
+* Firewall Manager
+* Shield (DDoS Protection)
+* Macie (Data Security & Privacy)
+* GuardDuty (Threat Detection)
+* Inspector (Security Assessment)
+
 Elastic Beanstalk / CodeDeploy / CodePipeline / CodeCommit / Glacier / Workspaces / Direct
 # EC2
 ssh -i EC2DevSsh.pem ec2-user@54.175.14.82
