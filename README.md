@@ -128,6 +128,21 @@ Cognito (User Pools, Identity Pools)
 * GuardDuty (Threat Detection)
 * Inspector (Security Assessment)
 
+# Networking - VPC
+* CIDR (Classless Inter-Domain Routing)
+* 0.0.0.0/{n} - n = 0-32 - bits #example 0.0.0.0/16 = 0.0.255.255 (65,536 IP addresses), 0.0.0.255/24 = 256 IP addresses
+* VPC (Virtual Private Cloud) - Isolated Network
+* Subnet (Availability Zone)
+* Route Table (Route to Internet Gateway) - connect to subnet to Internet Gateway, need add route target IGW 
+* Internet Gateway (IGW) - on their own don't do anything, need to be attached to VPC
+* Bastion Host (Jump Box) - allow SSH to private instances (from public subnet to private subnet)
+* NAT Gateway (NAT Instance) - allow instances in private subnet to connect to the internet
+* NAT Instance (Network Address Translation) - allow instances in private subnet to connect to the internet - outdated
+* NAT Gateway (NATGW Network Address Translation) - highly available, managed by AWS, automatically scaled, not associated with security group,
+, required IGW, required Elastic IP, required public subnet
+* Security Group (Stateful) - allow traffic to and from instances
+* Network Access Control List (NACL) (Stateless) - allow traffic to and from subnets
+
 Elastic Beanstalk / CodeDeploy / CodePipeline / CodeCommit / Glacier / Workspaces / Direct
 # EC2
 ssh -i EC2DevSsh.pem ec2-user@54.175.14.82
