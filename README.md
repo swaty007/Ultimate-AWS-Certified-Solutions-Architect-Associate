@@ -129,11 +129,11 @@ Cognito (User Pools, Identity Pools)
 * Inspector (Security Assessment)
 
 # Networking - VPC
-* CIDR (Classless Inter-Domain Routing)
+* CIDR (Classless Inter-Domain Routing) - give IP addresses to devices on a network
 * 0.0.0.0/{n} - n = 0-32 - bits #example 0.0.0.0/16 = 0.0.255.255 (65,536 IP addresses), 0.0.0.255/24 = 256 IP addresses
 * VPC (Virtual Private Cloud) - Isolated Network
 * Subnet (Availability Zone)
-* Route Table (Route to Internet Gateway) - connect to subnet to Internet Gateway, need add route target IGW 
+* Route Table (Route to Internet Gateway) - connect to subnet to Internet Gateway, need add route target IGW
 * Internet Gateway (IGW) - on their own don't do anything, need to be attached to VPC
 * Bastion Host (Jump Box) - allow SSH to private instances (from public subnet to private subnet)
 * NAT Gateway (NAT Instance) - allow instances in private subnet to connect to the internet
@@ -141,7 +141,28 @@ Cognito (User Pools, Identity Pools)
 * NAT Gateway (NATGW Network Address Translation) - highly available, managed by AWS, automatically scaled, not associated with security group,
 , required IGW, required Elastic IP, required public subnet
 * Security Group (Stateful) - allow traffic to and from instances
-* Network Access Control List (NACL) (Stateless) - allow traffic to and from subnets
+* Network Access Control List (NACL) (Stateless / Security Group Stateful) - allow traffic to and from subnets
+* [x] NACL - allow traffic to and from subnets, 2 checks for Incoming and Outgoing traffic, Security Group allow return traffic automatically
+* [x] Allow deny rules, 100 rules, 1-32766, 32767-65535, default allow all
+* [x] Rules are evaluated in order, the first rule that matches a packet applies
+* [x] Applies at the subnet level to all instances in the subnet
+* Security Group - allow rules only
+* Ephemeral Ports (Dynamic Ports) - 1024-65535 - Outgoing traffic from instance to the internet (response)
+* VPC Peering - connect two VPCs (no transitive peering)
+* VPC Endpoints - connect to AWS services from private network not public, remove the need IGW, NATGW (S3, DynamoDB, SNS, SQS, Kinesis, API Gateway, CloudWatch, CloudTrail, CodeBuild, CodeCommit, CodePipeline, EC2, SSM, Secrets Manager, STS, Lambda, Step Functions, S3, DynamoDB, SNS, SQS, Kinesis, API Gateway, CloudWatch, CloudTrail, CodeBuild, CodeCommit, CodePipeline, EC2, SSM, Secrets Manager, STS, Lambda, Step Functions)
+* Interface Endpoint - powered by PrivateLink, provisions an ENI (Elastic Network Interface) in your subnet, for services hosted on AWS or by other AWS customers
+* Gateway Endpoint - free, for S3 and DynamoDB, powered by route tables, for services hosted on AWS\
+* Flow Logs - capture information about IP traffic going to and from network interfaces in your VPC
+* VPN (Virtual Private Network) - connect on-premises network to AWS
+* VPG (Virtual Private Gateway) - attach to VPC, connect to Customer Gateway
+* CGW (Customer Gateway) - attach to on-premises network, connect to Virtual Private Gateway
+* Route Propagation - enable route propagation on the route table associated with the subnet
+* Direct Connect - dedicated network connection from on-premises to AWS
+* DX (Direct Connect Gateway) - connect multiple VPCs to on-premises network
+* Transit Gateway - connect multiple VPCs and on-premises networks
+* VPC Traffic Mirroring - copy network traffic from EC2 instances within your VPC to security and monitoring appliances for use cases such as content inspection, threat monitoring, and troubleshooting
+
+
 
 Elastic Beanstalk / CodeDeploy / CodePipeline / CodeCommit / Glacier / Workspaces / Direct
 # EC2
