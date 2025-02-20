@@ -72,11 +72,11 @@ Serverless Application Model (SAM)
 * AWS Lambda / Lambda Snap Start (Java 11+) / Provisioned Concurrency / Lambda Extensions / default outside VPC
 Lambda@Edge is a feature of CloudFront that lets you run code closer to your users, which improves performance and reduces latency.
 * DynamoDB
-* AWS Cognito
-* AWS S3
-* AWS SNS
-* AWS SQS
-* AWS SES
+* AWS Cognito (User Pools, Identity Pools)
+* AWS S3 (Simple Storage Service)
+* AWS SNS (Simple Notification Service)
+* AWS SQS (Simple Queue Service)
+* AWS SES (Simple Email Service)
 * Kinesis Data Streams
 * AWS API Gateway
 * Aurora
@@ -123,7 +123,7 @@ Cognito (User Pools, Identity Pools)
 * AWS Certificate Manager (ACM)
 * Web Application Firewall (WAF)
 * Firewall Manager
-* Shield (DDoS Protection)
+* Shield (DDoS Protection) - const 3000 $/month give 24/7 support
 * Macie (Data Security & Privacy)
 * GuardDuty (Threat Detection)
 * Inspector (Security Assessment)
@@ -161,8 +161,11 @@ Cognito (User Pools, Identity Pools)
 * DX (Direct Connect Gateway) - connect multiple VPCs to on-premises network
 * Transit Gateway - connect multiple VPCs and on-premises networks
 * VPC Traffic Mirroring - copy network traffic from EC2 instances within your VPC to security and monitoring appliances for use cases such as content inspection, threat monitoring, and troubleshooting
-
-
+* Egress-Only Internet Gateway (Similar to NAT for IPv6) - allow IPv6 traffic from instances in your VPC to the internet, but prevent the internet from initiating an IPv6 connection with your instances
+* AWS Network Firewall - managed firewall service that makes it easy to deploy essential network protections for all of your Amazon Virtual Private Clouds (VPCs)
+* [x] uses AWS Gateway Load Balancer (GWLB) to inspect and filter traffic
+* [x] Stateful inspection, intrusion prevention
+* [x] From Layer 3 to Layer 7
 
 Elastic Beanstalk / CodeDeploy / CodePipeline / CodeCommit / Glacier / Workspaces / Direct
 # EC2
