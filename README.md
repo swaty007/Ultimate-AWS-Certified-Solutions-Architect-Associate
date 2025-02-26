@@ -167,6 +167,25 @@ Cognito (User Pools, Identity Pools)
 * [x] Stateful inspection, intrusion prevention
 * [x] From Layer 3 to Layer 7
 
+# Disaster Recovery & Migrations
+* RPO (Recovery Point Objective) - how much data you can afford to lose / data loss
+* RTO (Recovery Time Objective) - how long it takes to recover / downtime
+* Backup & Restore - RPO & RTO
+* Pilot Light (Warm Standby) - small version of the application is always running in the cloud
+* Warm Standby - a scaled-down version of a fully functional environment that is always running in the cloud
+* Multi-Site - active-active (very expensive)
+* AWS Backup - centralize and automate data protection across AWS services
+* SCT (Schema Conversion Tool) - convert database schema from one engine to another
+* DMS (Database Migration Service) - migrate databases to AWS
+* SMS (Server Migration Service) - migrate on-premises servers to AWS
+* AMS (Application Migration Service) - migrate applications to AWS
+* Snowball - data transfer appliance
+* Snowmobile - data transfer truck
+* Snowcone - small data transfer device
+* Snowball Edge - data transfer device with compute capabilities
+
+# More Solutions Architectures
+
 Elastic Beanstalk / CodeDeploy / CodePipeline / CodeCommit / Glacier / Workspaces / Direct
 # EC2
 ssh -i EC2DevSsh.pem ec2-user@54.175.14.82
