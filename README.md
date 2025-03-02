@@ -184,6 +184,24 @@ Cognito (User Pools, Identity Pools)
 * Snowcone - small data transfer device
 * Snowball Edge - data transfer device with compute capabilities
 
+# Well-Architected Framework & Well-Architected Tool
+1) Operational Excellence
+2) Security
+3) Reliability
+4) Performance Efficiency
+5) Cost Optimization
+6) Sustainability
+* Stop guessing your capacity needs
+* Test systems at production scale
+* Automate to make architectural experimentation easier
+* Allow for evolutionary architectures
+* [x] Design based on changing requirements
+* Drive architectures using data
+* Improve through game days
+* [x] Simulate applications for flash sale days
+* Trusted Advisor - cost optimization, performance, security, fault tolerance, service limits
+
+
 # More Solutions Architectures
 * Event-Driven Architecture - Lambda, S3, DynamoDB, SNS, SQS, Kinesis
 * [x] SQS + Lambda - SQS triggers Lambda
