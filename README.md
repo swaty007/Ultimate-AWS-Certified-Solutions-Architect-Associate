@@ -185,6 +185,22 @@ Cognito (User Pools, Identity Pools)
 * Snowball Edge - data transfer device with compute capabilities
 
 # More Solutions Architectures
+* Event-Driven Architecture - Lambda, S3, DynamoDB, SNS, SQS, Kinesis
+* [x] SQS + Lambda - SQS triggers Lambda
+* [x] SQS FIFO + Lambda - SQS FIFO triggers Lambda
+* [x] SNS + Lambda, DLQ (Dead Letter Queue) - SQS
+* [x] S3 + Lambda - S3 triggers Lambda
+* [x] SDK send to SNS, SNS send to multiple SQS
+* Caching
+* [x] ElastiCache (Redis, Memcached) - cache data in memory
+* [x] CloudFront (CDN) -> API Gateway -> Lambda, EC2 -> Redis, Memcached, DAX, DynamoDB
+* Client ->? Can be CloudFront then NACL not helpful + ?WAF -> NACL + ?WAF -> Security Group ALB, terminate connect and new connect from ALB to EC2 Security group
+* HPC (High-Performance Computing) - EC2, FSx, EFS, S3, Glacier, EBS, EBS Snapshots
+* [x] EFA (Elastic Fabric Adapter) - HPC, improve ENA, SR-IOV, MPI (Message Passing Interface)
+* [x] SR-IOV (Single Root I/O Virtualization) - HPC, high-performance network interface for EC2 instances 10gbps
+* [x] ENA (Elastic Network Adapter) - HPC, high-performance network interface for EC2 instances 100gbps
+* [x] AWS Batch - HPC, run batch computing workloads on the cloud
+* [x] AWS ParallelCluster - HPC, open-source cluster management tool
 
 Elastic Beanstalk / CodeDeploy / CodePipeline / CodeCommit / Glacier / Workspaces / Direct
 # EC2
